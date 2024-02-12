@@ -1,0 +1,39 @@
+.catalog__search {
+    width: 1156px;
+    height: 62px;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.catalog__search-text {
+    width: 1135px;
+    height: 62px;
+}
+.catalog__search-button {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #DBFE01;
+    border: none;
+    cursor: pointer;
+    top: 1px;
+    right: 23px;
+    z-index: 3;
+    
+
+}
+
+.catalog__filter-button {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    top: 1px;
+    right: 89px;
+    z-index: 3;
+    
+
+}

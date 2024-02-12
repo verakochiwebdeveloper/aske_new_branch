@@ -1,0 +1,74 @@
+.gallery {
+    background-color: #D7D7D7;
+    color: #000;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 400;
+
+    padding: 5px 50px 70px 50px;
+}
+
+
+.gallery__date-of-performances {
+    position: relative;
+    z-index: 1;
+
+    max-width: 500px;
+    margin-bottom: 35px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery__text {
+    color: #F860E4;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.gallery__btn-more {
+    border: none;
+    background-color: transparent;
+    width: 60px;
+
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.gallery__btn-more:hover {
+    background-color: #DBFE01;
+}
+
+.gallery__btn-more:active {
+    background-color: #F760E1;
+}
+
+.gallery__photos {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+    &-item {
+        cursor: pointer;
+        width: 280px;
+        height: 280px;
+    }
+
+    &-img {
+        filter: grayscale(100);
+        transition: 1s;
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        object-position: center;
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+}

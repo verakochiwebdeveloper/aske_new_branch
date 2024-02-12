@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Aske Online">
+	<meta name="keywords"
+				content="Aske Online">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Aske Online</title>
+</head>
+
+
+<body>
+	<div class="header">
+    <div class="full__container flex --background-office --container-border-down-none ">
+        <a href="#" class="logo"><img  src="img/logo.svg" alt="Aske Online" class="logo__image"></a>
+        <div class="header__wrapper">
+            <nav class="menu">
+                <div class="menu__wrapper">
+                    <button class="menu__burger">
+                        <div class="menu__burger-line"> </div>
+                    </button>
+                    <ul class="menu__list flex --just space">
+                        
+                        <li class="menu__list-item">
+                            <a href="index.html" class="menu__list-link">ГЛАВНАЯ</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">артисты</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="news.html" class="menu__list-link">Новости</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="calendar.html" class="menu__list-link">События</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="autorization.html" class="menu__list-link">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+	<main class="main">
+		<div class="full__container --container-border-top-none --container-border-down-none">
+
+			<!-- section info -->
+			<section class="info">
+
+    <button class="btn-exit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+            <path
+                d="M0 33.3333V23.4792H2.08333V31.25H31.25V2.08333H2.08333V9.85417H0V0H33.3333V33.3333H0ZM14.2625 24.8396L12.7875 23.3396L18.4208 17.7083H0V15.625H18.4208L12.7875 9.99166L14.2625 8.49167L22.4375 16.6667L14.2625 24.8396Z"
+                fill="white" />
+        </svg>
+        <span>
+            Выход
+        </span>
+    </button>
+
+    <div class="info__container">
+
+        <div class="info__top">
+            <img class="info__avatar" src="img/x_9256d64c.jpg" alt="Avatar">
+            <div class="info__text">
+                <ul class="info__list">
+                    <li>Сценическое имя/название группы</li>
+                    <li>Имя</li>
+                    <li>Фамилия</li>
+                    <li>Жанр выступлений/Поджанр</li>
+                    <li>Электронная почта</li>
+                    <li>Уличный артист: Искусство на тротуаре
+                        Уличные артисты – это люди, которые превращают свои таланты в средство заработка на улице. Их
+                        искусство может быть разным: от пения и игры на музыкальных инструментах до танцев и акробатики.
+                        Уличные артисты в своем творчестве стремятся подарить радость и удивление прохожим, а также
+                        привлечь внимание к своим талантам.
+                        Профессия уличного артиста является одной из самых трудных и непредсказуемых. Они вынуждены
+                        работать в различных погодных условиях, в том числе и в дождь, снег, жару. Однако, несмотря на
+                        все трудности, уличные артисты продолжают радовать прохожих своим творчеством.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info__bottom">
+            <div class="info__buttons">
+                <button id="open-modal-btn" class="info__btn-edit-info --buttons-sizes">Редактировать информацию</button>
+                <button id="open-modal-btn-social-networks" class="info__btn-add-social-network --buttons-sizes">Добавить соцсети и QR-code</button>
+                <button id="open-modal-btn-add-performances" class="info__btn-add-performances --buttons-sizes">Добавить выступление</button>
+            </div>
+            <div class="info__links">
+                <img class="info__qr-code" src="img/qr-code.jpg" alt="">
+                <div class="info__social-network">
+                    
+                    <a class="info__link-vk" href="#">
+                        <svg class="info__link-svg" xmlns="http://www.w3.org/2000/svg" width="55" height="49" viewBox="0 0 55 49" fill="none">
+                            <path
+                                d="M52.0398 11.2643C52.3931 10.068 52.0398 9.1875 50.3401 9.1875H44.716C43.2837 9.1875 42.6248 9.94355 42.2715 10.7857C42.2715 10.7857 39.4069 17.7816 35.3583 22.318C34.0502 23.6291 33.4486 24.0502 32.7325 24.0502C32.3792 24.0502 31.8349 23.6291 31.8349 22.4328V11.2643C31.8349 9.82871 31.4339 9.1875 30.2498 9.1875H21.4078C20.5103 9.1875 19.9755 9.85742 19.9755 10.4795C19.9755 11.8385 21.9998 12.1543 22.2099 15.9824V24.2895C22.2099 26.1078 21.8853 26.4428 21.1691 26.4428C19.2594 26.4428 14.6188 19.4182 11.8688 11.3791C11.3149 9.81914 10.7707 9.1875 9.32883 9.1875H3.7047C2.10053 9.1875 1.77588 9.94355 1.77588 10.7857C1.77588 12.2787 3.6856 19.6957 10.6656 29.4957C15.3158 36.1854 21.8662 39.8125 27.8245 39.8125C31.4052 39.8125 31.8445 39.0086 31.8445 37.6209C31.8445 31.2279 31.5198 30.625 33.3149 30.625C34.1457 30.625 35.578 31.0461 38.92 34.2713C42.7394 38.0994 43.3696 39.8125 45.5085 39.8125H51.1326C52.7368 39.8125 53.5484 39.0086 53.0806 37.4199C52.0111 34.0799 44.7828 27.2084 44.4582 26.749C43.6274 25.6771 43.8661 25.1986 44.4582 24.2416C44.4677 24.232 51.3332 14.5469 52.0398 11.2643Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a class="info__link-boosty" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="40" viewBox="0 0 52 40" fill="none">
+                            <path
+                                d="M5.76529 23.895L14.7353 0L28.5196 0L25.7398 7.40667L25.6575 7.535L18.3385 27.09H25.1635C22.3013 32.5717 20.0718 36.8683 18.4771 39.9783C5.87579 39.8733 2.35279 32.9317 5.43379 24.72M18.5335 40L35.1518 21.6083H28.1101L34.2418 9.82C44.7545 10.6667 49.7053 17.0367 46.789 24.74C43.6798 33.0167 31.0785 40 18.8065 40H18.5335Z"
+                                fill="#D76023" />
+                        </svg>
+                    </a>
+                    <a class="info__link-telegram" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="53" viewBox="0 0 55 53" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.2641 30.9608C13.3626 30.9924 13.4638 31.0153 13.5666 31.0292C14.215 32.5014 14.8597 33.9751 15.5008 35.4503C16.6535 38.1047 17.8154 40.8386 18.0697 41.6248C18.3883 42.5921 18.7229 43.2501 19.0895 43.7006C19.2797 43.9303 19.4974 44.1335 19.7541 44.2881C19.8878 44.3687 20.0309 44.4339 20.1804 44.4824C20.9137 44.7474 21.5829 44.637 22.0022 44.5023C22.2483 44.4213 22.4825 44.31 22.6989 44.171L22.7104 44.1666L29.1866 40.2755L36.6689 45.8008C36.7789 45.8825 36.8981 45.9509 37.0264 46.0061C37.9247 46.3816 38.7956 46.5141 39.616 46.4081C40.4318 46.2976 41.0804 45.9686 41.5639 45.5954C42.1191 45.1641 42.5618 44.6135 42.8564 43.9877L42.877 43.9391L42.8839 43.9215L42.8885 43.9126V43.9082L42.8908 43.906C42.9306 43.811 42.9613 43.7127 42.9825 43.6123L49.8116 10.4321C49.8332 10.3259 49.8439 10.2179 49.8437 10.1097C49.8437 9.13801 49.4633 8.21272 48.5718 7.65401C47.8064 7.1748 46.9562 7.15272 46.4177 7.19247C45.8402 7.23664 45.3039 7.37355 44.9441 7.48397C44.7427 7.54548 44.5439 7.61473 44.3483 7.69155L44.3231 7.7026L6.02016 22.1804L6.01557 22.1826C5.88598 22.2286 5.75831 22.2794 5.63286 22.335C5.32913 22.4666 5.03777 22.6232 4.76203 22.8032C4.24182 23.1455 3.04328 24.0862 3.24724 25.6409C3.40766 26.8776 4.28766 27.6394 4.8262 28.006C5.11953 28.207 5.39911 28.3505 5.60536 28.4455C5.69703 28.4896 5.89411 28.5647 5.97891 28.6001L6.00182 28.6067L13.2641 30.9608ZM45.6637 10.7501H45.6591C45.6394 10.7585 45.6195 10.7666 45.5995 10.7744L7.25078 25.2721C7.23105 25.2798 7.21119 25.2871 7.1912 25.2942L7.16828 25.3008C7.09823 25.3273 7.02941 25.3568 6.96203 25.3891C7.02582 25.4243 7.09162 25.456 7.15911 25.4841L14.3595 27.8205C14.4882 27.8623 14.6113 27.9186 14.7262 27.9883L38.5068 14.5727L38.5297 14.5617C38.6221 14.5076 38.7169 14.4575 38.8139 14.4115C38.9789 14.3298 39.2424 14.2106 39.5404 14.1222C39.7466 14.0604 40.3585 13.8859 41.0185 14.0913C41.3686 14.1976 41.6806 14.3967 41.9188 14.6657C42.1571 14.9348 42.312 15.263 42.366 15.6128C42.4513 15.9193 42.4537 16.2416 42.3729 16.5492C42.2124 17.1565 41.7724 17.6291 41.3714 17.9912C41.0277 18.3004 36.5681 22.4432 32.1704 26.5331L26.1822 32.0981L25.1166 33.0918L38.5733 43.0337C38.7549 43.1072 38.9522 43.1375 39.1485 43.1221C39.2474 43.1091 39.3404 43.0693 39.4166 43.0072C39.5095 42.9316 39.5892 42.8422 39.6527 42.7422L39.6572 42.74L46.2802 10.558C46.0715 10.6063 45.867 10.6698 45.6683 10.7479L45.6637 10.7501ZM26.2739 38.1202L23.5881 36.1371L22.9372 40.1231L26.2739 38.1202ZM21.1245 32.2018L23.7943 29.7175L29.7824 24.1481L32.0122 22.0766L17.0706 30.5058L17.1508 30.6869C18.0931 32.8322 19.0251 34.9816 19.9466 37.1353L20.5952 33.1603C20.6538 32.7916 20.8405 32.4552 21.1245 32.2018Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img class="spot-gray" src="img/spot-gray.svg" alt="">
+
+</section>
+
+<section class="spot-white">
+    <button id="open-modal-btn-download-photos" class="btn-download-photos">
+        Загрузить фото
+    </button>
+</section>
+			<!-- section gallery -->
+			<section class="gallery">
+
+        <div class="gallery__date-of-performances">
+            <h2 class="gallery__text">Расписание выступлений:</h2>
+            <p>25/04/24 в 18:00 ул. Большая Покровская, около театра</p>
+            <p>01/06/24 в 15:00 Нижне-Волжская набережная</p>
+            <button id="open-modal-btn-more-performances" class="gallery__btn-more">
+                Ещё
+            </button>
+        </div>
+
+        <ul class="gallery__photos">
+            <li class="gallery__photos-item"><img src="img/artist__img/image5.jpg" alt="" class="gallery__photos-img"></li>
+            <li class="gallery__photos-item"><img src="img/x_9256d64c.jpg" alt="" class="gallery__photos-img"></li>
+            <li class="gallery__photos-item"><img src="img/x_a15b51e0.jpg" alt="" class="gallery__photos-img"></li>
+            <li class="gallery__photos-item"><img src="img/x_4016daf4.jpg" alt="" class="gallery__photos-img"></li>
+            <li class="gallery__photos-item"><img src="img/x_9256d64c.jpg" alt="" class="gallery__photos-img"></li>
+            <li class="gallery__photos-item"><img src="img/x_a15b51e0.jpg" alt="" class="gallery__photos-img"></li>
+        </ul>
+
+</section>
+			<!-- section popups -->
+			<section class="popups">
+
+    <!-- Редактировать информацию -->
+    <div class="modal" id="my-modal">
+        <div class="modal__box">
+            <button class="modal__close-btn" id="close-my-modal-btn">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="25" height="25" fill="#F8F3F3" />
+                    <g id="&#208;&#158;&#208;&#186;&#208;&#189;&#208;&#190; 10">
+                        <rect x="-812" y="-173" width="874" height="675" fill="#D7D7D7" />
+                        <rect x="-812" y="-173" width="874" height="675" stroke="black" stroke-width="4" />
+                        <g id="Group 1000002330">
+                            <rect id="Rectangle 135" width="25" height="25" fill="white" />
+                            <g id="Group 1000002324">
+                                <path id="Line 43" d="M3.125 3.125L22.4865 22.6562" stroke="black" stroke-width="1.5" />
+                                <path id="Line 44" d="M2.17397 22.6567L21.7507 3.13322" stroke="black"
+                                    stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+
+            <h2 class="modal__title">Редактировать информацию</h2>
+
+            <form action="#" method="post" name="form-data-modification" class="form-data-modification"
+                enctype="multipart/form-data">
+                <div class="form-flex">
+                    <input type="text" name="nickname" placeholder="Сценическое имя/название группы">
+                    <input type="text" name="firstname" placeholder="Имя">
+                    <input type="text" name="surname" placeholder="Фамилия">
+
+                    <input type="text" list="genres" id="my-genre" name="genre" placeholder="Жанр выступлений">
+                    <datalist id="genres">
+                        <option value="Музыкант">
+                        <option value="Певец">
+                        <option value="Актёр">
+                        <option value="Поэт">
+                        <option value="Художник">
+                        <option value="Танцор">
+                        <option value="Другое">
+                    </datalist>
+
+                    <input type="text" list="subgenres" id="my-subgenre" name="subgenre" placeholder="Поджанр">
+                    <datalist id="subgenres">
+                        <option value="Поп">
+                        <option value="Рок">
+                        <option value="Рэп">
+                        <option value="Хип-хоп">
+                        <option value="Панк">
+                        <option value="Регги">
+                        <option value="Другое">
+                    </datalist>
+
+                    <input type="email" name="email" placeholder="Электронная почта">
+                    <textarea class="input-about" name="about-me" rows="4"
+                        placeholder="О себе (максимальное кол-во символов с пробелами 728)" maxlength="728"></textarea>
+                </div>
+
+                <button class="--green-button" type="submit">Сохранить изменения</button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Добавить социальные сети и qr-code-->
+    <div class="modal-social-networks" id="my-modal-social-networks">
+        <div class="modal__box-social-networks">
+            <button class="modal__close-btn" id="close-my-modal-btn-social-networks">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="25" height="25" fill="#F8F3F3" />
+                    <g id="&#208;&#158;&#208;&#186;&#208;&#189;&#208;&#190; 10">
+                        <rect x="-812" y="-173" width="874" height="675" fill="#D7D7D7" />
+                        <rect x="-812" y="-173" width="874" height="675" stroke="black" stroke-width="4" />
+                        <g id="Group 1000002330">
+                            <rect id="Rectangle 135" width="25" height="25" fill="white" />
+                            <g id="Group 1000002324">
+                                <path id="Line 43" d="M3.125 3.125L22.4865 22.6562" stroke="black" stroke-width="1.5" />
+                                <path id="Line 44" d="M2.17397 22.6567L21.7507 3.13322" stroke="black"
+                                    stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+
+            <h2 class="modal__title">Добавить социальные сети и QR-code</h2>
+
+            <form action="#" method="post" name="form-add-social-networks" class="form-add-social-networks"
+                enctype="multipart/form-data">
+                <div class="form-flex">
+                    <input type="text" name="vk" placeholder="Добавьте ссылку на Вконтакте">
+                    <input type="text" name="boosty" placeholder="Добавьте ссылку на Boosty">
+                    <input type="text" name="telegram" placeholder="Добавьте ссылку на Telegram">
+                    <label for="qr-code">Загрузите ваш QR-code
+                        <input type="file" name="qr-code" accept=".jpg, .jpeg, .png">
+                    </label>
+                </div>
+                <button class="--green-button" type="submit">Добавить</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Добавить выступление-->
+    <div class="modal-add-performances" id="my-modal-add-performances">
+        <div class="modal__box-add-performances">
+            <button class="modal__close-btn" id="close-my-modal-btn-add-performances">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="25" height="25" fill="#F8F3F3" />
+                    <g id="&#208;&#158;&#208;&#186;&#208;&#189;&#208;&#190; 10">
+                        <rect x="-812" y="-173" width="874" height="675" fill="#D7D7D7" />
+                        <rect x="-812" y="-173" width="874" height="675" stroke="black" stroke-width="4" />
+                        <g id="Group 1000002330">
+                            <rect id="Rectangle 135" width="25" height="25" fill="white" />
+                            <g id="Group 1000002324">
+                                <path id="Line 43" d="M3.125 3.125L22.4865 22.6562" stroke="black" stroke-width="1.5" />
+                                <path id="Line 44" d="M2.17397 22.6567L21.7507 3.13322" stroke="black"
+                                    stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+
+            <h2 class="modal__title">Добавить выступление</h2>
+
+            <form action="#" method="post" name="form-add-performances" class="form-add-performances"
+                enctype="multipart/form-data">
+                <div class="form-flex">
+                    <input type="date" name="date-performance" id="dateInput">
+                    <input type="time" name="time-performance">
+                    <input type="text" name="address-performance" placeholder="Место выступления (адрес)">
+                </div>
+                <button class="--green-button" type="submit">Добавить</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Посмотреть все выступления-->
+    <div class="modal-more-performances" id="my-modal-more-performances">
+        <div class="modal__box-more-performances">
+            <button class="modal__close-btn" id="close-my-modal-btn-more-performances">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="25" height="25" fill="#F8F3F3" />
+                    <g id="&#208;&#158;&#208;&#186;&#208;&#189;&#208;&#190; 10">
+                        <rect x="-812" y="-173" width="874" height="675" fill="#D7D7D7" />
+                        <rect x="-812" y="-173" width="874" height="675" stroke="black" stroke-width="4" />
+                        <g id="Group 1000002330">
+                            <rect id="Rectangle 135" width="25" height="25" fill="white" />
+                            <g id="Group 1000002324">
+                                <path id="Line 43" d="M3.125 3.125L22.4865 22.6562" stroke="black" stroke-width="1.5" />
+                                <path id="Line 44" d="M2.17397 22.6567L21.7507 3.13322" stroke="black"
+                                    stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+
+            <h2 class="modal__title">Все выступления:</h2>
+
+            <div class="form-flex">
+                <p>25/04/24 в 18:00 ул. Большая Покровская, д. 4 </p>
+                <p>25/04/24 в 18:00 ул. Большая Покровская, д. 4 </p>
+                <p>25/04/24 в 18:00 ул. Большая Покровская, д. 4 </p>
+                <p>25/04/24 в 18:00 ул. Большая Покровская, д. 4 </p>
+                <p>25/04/24 в 18:00 ул. Большая Покровская, д. 4 </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Добавить фото выступлений-->
+    <div class="modal-download-photos" id="my-modal-download-photos">
+        <div class="modal__box-download-photos">
+            <button class="modal__close-btn" id="close-my-modal-btn-download-photos">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="25" height="25" fill="#F8F3F3" />
+                    <g id="&#208;&#158;&#208;&#186;&#208;&#189;&#208;&#190; 10">
+                        <rect x="-812" y="-173" width="874" height="675" fill="#D7D7D7" />
+                        <rect x="-812" y="-173" width="874" height="675" stroke="black" stroke-width="4" />
+                        <g id="Group 1000002330">
+                            <rect id="Rectangle 135" width="25" height="25" fill="white" />
+                            <g id="Group 1000002324">
+                                <path id="Line 43" d="M3.125 3.125L22.4865 22.6562" stroke="black" stroke-width="1.5" />
+                                <path id="Line 44" d="M2.17397 22.6567L21.7507 3.13322" stroke="black"
+                                    stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+
+            <h2 class="modal__title">Добавить фото выступлений</h2>
+
+            <form action="#" method="post" name="form-add-download-photos" class="form-add-download-photos"
+                enctype="multipart/form-data">
+                <div class="form-flex">
+                    <label for="qr-code">Загрузите ваши фотографии
+                        <input type="file" name="qr-code" multiple accept=".jpg, .jpeg, .png">
+                    </label>
+                </div>
+                <button class="--green-button" type="submit">Добавить</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+		</div>
+	</main>
+	<footer class="footer">
+    <div class="full__container --container-color-black">
+        <div class="footer__wrapper flex --just-space">
+            <div class="footer__info ">
+                <div class="footer__info-material">
+                    <p class="footer__material-text">фотоматериалы  взяты с сайта 
+                        <a target="_blank" href="https://ru.freepik.com" class="footer__material-link">https://ru.freepik.com/</a>
+                    </p>
+                    <div class="footer__info-text">
+                        Поле для редактируемого текста Поле для редактируемого текста Поле для редактируемого текста Поле для редактируемого текста Поле для редактируемого текста Поле для редактируемого текста Поле для редактируемого текста Поле для редактируемого текста Поле для редактируемого текста
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__links">
+                <p class="footer__links-title">МЕНЮ</p>
+                <ul class="footer__list">
+                    
+                    <li class="footer__list-item">
+                        <a href="index.html" class="footer__list-link">Главная</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">Артисты</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="news.html" class="footer__list-link">Новости</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">События</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">Личный кабинет</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <a target="_blank" href="#" class="footer__telegram"><svg class="tg-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="38" viewBox="0 0 44 38" fill="none">
+            <rect width="44" height="38" fill="black"/>
+            <path d="M34 8L6 19L16.3158 20.4667M34 8L30.3158 30L16.3158 20.4667M34 8L16.3158 20.4667M16.3158 20.4667V28.5333L21.1038 23.7271" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <div class="footer__developer">
+            <a target="_blank" href="https://lad-academy.ru/" class="footer__developer-link">
+                <img src="img/lad__logo.jpg" alt="Академия Лад" class="footer__developer-logo">
+                <p class="footer__developer-title">
+                    Cайт создан ИТ академией ЛАД
+                </p>
+                
+            </a>
+        </div>
+        
+    </div>
+</footer>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

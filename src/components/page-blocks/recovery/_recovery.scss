@@ -1,0 +1,234 @@
+*{box-sizing: border-box;}
+
+.container {
+    margin: 0 auto;
+    background-color: #2A2929;
+    border-right: 4px solid #000;
+    border-left: 4px solid #000;
+    border-bottom: 4px solid #000;
+    max-width: 1430px;
+
+}
+
+
+/* page */
+
+.page-recovery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.page_logo-recovery {
+    width: 246px;
+    height: 176px;
+    margin: 31px auto 0px;
+}
+
+.page_title-recovery {
+    color: #FFF;
+    text-align: center;
+    font-family: "Paytone One";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.title_pink {
+    color: #F860ED;
+}
+
+.title_green {
+    color: #DBFE01;
+}
+
+@media screen and (width < 1440px){
+    .page-recovery {
+        margin: -2px auto 0;
+    }
+
+    .page_title-recovery {
+        font-size: 64px;
+        width: 451px;
+        height: 81px;
+        margin: 25px auto 0px;
+    }
+
+    .page_logo-recovery {
+        width: 220px;
+        height: 142px;
+        margin-top: 17px;
+    }
+}
+
+@media screen and (width < 744px){
+
+    .page_logo-recovery {
+        width: 102px;
+        height: 69px;
+        margin-top: 32px;
+    }
+
+    .page_title-recovery {
+        font-size: 28px;
+        width: 269px;
+        margin: 5px auto 0px;
+        height: 100%;
+    }
+}
+
+/* account */
+.account-recovery {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 27px auto 0px;
+}
+
+.account_title-recovery {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 auto 30px;
+}
+
+
+.account_input-title-recovery {
+    color: #DBFE01;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 5px 4px;
+}
+
+.account_wrapper-recovery {
+    margin-bottom: 21px;
+}
+
+.account_wrapper-recovery:last-of-type {
+    margin-bottom: 9px;
+}
+
+.account_input-recovery {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    color: #000;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.account_input-recovery:hover {
+    border: 3px solid #DBFE01;
+}
+
+.account_input-recovery:focus {
+    border: 3px solid #F860F5;
+    outline: none;
+}
+
+.account_incorrect-recovery {
+    display: none;
+    color: #F85757;
+    text-align: center;
+    font-family: 'Roboto';
+    width: 240px;
+    margin: 20px auto 0px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.account_login-recovery {
+    width: 100%;
+    height: 60px;
+    background: #DBFE01;
+    margin: 20px auto 60px;
+    color: #000;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.account_login-recovery:hover {
+    background-color: #F860F5;
+}
+
+.account_login-recovery:active {
+    border: #F860F5 5px solid;
+    background-color: #DBFE01;
+}
+
+@media screen and (width < 1440px){
+    .account-recovery {
+        width: 438px;
+        margin-top: 45px;
+    }
+
+    .account_title-recovery {
+        font-size: 32px;
+        width: 310px;
+        margin: 0 auto 70px;
+    }
+
+    .account_login-recovery {
+        margin: 100px auto 160px;
+    }
+
+    .account_incorrect-recovery {
+        margin: 70px auto 0;
+        font-size: 24px;
+    }
+}
+
+@media screen and (width < 744px){
+    .account-recovery {
+        width: 270px;
+        margin-top: 49px;
+    }
+
+    .account_title-recovery {
+        font-size: 24px;
+        width: 233px;
+        margin: 0 auto 60px;
+    }
+
+    .account_input-title-recovery {
+        font-size: 16px;
+    }
+
+    .account_login-recovery {
+        margin: 100px auto 90px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .account_input-recovery {
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .account_incorrect-recovery {
+        margin: 32px auto 0;
+        font-size: 16px;
+    }
+
+}

@@ -1,0 +1,30 @@
+.gallery-personal-page {
+    background-color: var(--color-dark);
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 600;
+
+    padding: 5px 50px 70px 50px;
+}
+
+.gallery-personal-page__top {
+    display: flex;
+    align-items: center;
+    gap: 250px;
+    // justify-content: center;
+    padding: 0 40px;
+}
+
+.open-popup {
+    color: #fff;
+}
+
+.gallery-personal-page__social-network {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}

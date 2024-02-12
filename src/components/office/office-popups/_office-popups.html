@@ -1,0 +1,211 @@
+<section class="popups">
+
+    <!-- Редактировать информацию -->
+    <div class="modal" id="my-modal">
+        <div class="modal__box">
+            <button class="modal__close-btn" id="close-my-modal-btn">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="25" height="25" fill="#F8F3F3" />
+                    <g id="&#208;&#158;&#208;&#186;&#208;&#189;&#208;&#190; 10">
+                        <rect x="-812" y="-173" width="874" height="675" fill="#D7D7D7" />
+                        <rect x="-812" y="-173" width="874" height="675" stroke="black" stroke-width="4" />
+                        <g id="Group 1000002330">
+                            <rect id="Rectangle 135" width="25" height="25" fill="white" />
+                            <g id="Group 1000002324">
+                                <path id="Line 43" d="M3.125 3.125L22.4865 22.6562" stroke="black" stroke-width="1.5" />
+                                <path id="Line 44" d="M2.17397 22.6567L21.7507 3.13322" stroke="black"
+                                    stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+
+            <h2 class="modal__title">Редактировать информацию</h2>
+
+            <form action="#" method="post" name="form-data-modification" class="form-data-modification"
+                enctype="multipart/form-data">
+                <div class="form-flex">
+                    <input type="text" name="nickname" placeholder="Сценическое имя/название группы">
+                    <input type="text" name="firstname" placeholder="Имя">
+                    <input type="text" name="surname" placeholder="Фамилия">
+
+                    <input type="text" list="genres" id="my-genre" name="genre" placeholder="Жанр выступлений">
+                    <datalist id="genres">
+                        <option value="Музыкант">
+                        <option value="Певец">
+                        <option value="Актёр">
+                        <option value="Поэт">
+                        <option value="Художник">
+                        <option value="Танцор">
+                        <option value="Другое">
+                    </datalist>
+
+                    <input type="text" list="subgenres" id="my-subgenre" name="subgenre" placeholder="Поджанр">
+                    <datalist id="subgenres">
+                        <option value="Поп">
+                        <option value="Рок">
+                        <option value="Рэп">
+                        <option value="Хип-хоп">
+                        <option value="Панк">
+                        <option value="Регги">
+                        <option value="Другое">
+                    </datalist>
+
+                    <input type="email" name="email" placeholder="Электронная почта">
+                    <textarea class="input-about" name="about-me" rows="4"
+                        placeholder="О себе (максимальное кол-во символов с пробелами 728)" maxlength="728"></textarea>
+                </div>
+
+                <button class="--green-button" type="submit">Сохранить изменения</button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Добавить социальные сети и qr-code-->
+    <div class="modal-social-networks" id="my-modal-social-networks">
+        <div class="modal__box-social-networks">
+            <button class="modal__close-btn" id="close-my-modal-btn-social-networks">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="25" height="25" fill="#F8F3F3" />
+                    <g id="&#208;&#158;&#208;&#186;&#208;&#189;&#208;&#190; 10">
+                        <rect x="-812" y="-173" width="874" height="675" fill="#D7D7D7" />
+                        <rect x="-812" y="-173" width="874" height="675" stroke="black" stroke-width="4" />
+                        <g id="Group 1000002330">
+                            <rect id="Rectangle 135" width="25" height="25" fill="white" />
+                            <g id="Group 1000002324">
+                                <path id="Line 43" d="M3.125 3.125L22.4865 22.6562" stroke="black" stroke-width="1.5" />
+                                <path id="Line 44" d="M2.17397 22.6567L21.7507 3.13322" stroke="black"
+                                    stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+
+            <h2 class="modal__title">Добавить социальные сети и QR-code</h2>
+
+            <form action="#" method="post" name="form-add-social-networks" class="form-add-social-networks"
+                enctype="multipart/form-data">
+                <div class="form-flex">
+                    <input type="text" name="vk" placeholder="Добавьте ссылку на Вконтакте">
+                    <input type="text" name="boosty" placeholder="Добавьте ссылку на Boosty">
+                    <input type="text" name="telegram" placeholder="Добавьте ссылку на Telegram">
+                    <label for="qr-code">Загрузите ваш QR-code
+                        <input type="file" name="qr-code" accept=".jpg, .jpeg, .png">
+                    </label>
+                </div>
+                <button class="--green-button" type="submit">Добавить</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Добавить выступление-->
+    <div class="modal-add-performances" id="my-modal-add-performances">
+        <div class="modal__box-add-performances">
+            <button class="modal__close-btn" id="close-my-modal-btn-add-performances">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="25" height="25" fill="#F8F3F3" />
+                    <g id="&#208;&#158;&#208;&#186;&#208;&#189;&#208;&#190; 10">
+                        <rect x="-812" y="-173" width="874" height="675" fill="#D7D7D7" />
+                        <rect x="-812" y="-173" width="874" height="675" stroke="black" stroke-width="4" />
+                        <g id="Group 1000002330">
+                            <rect id="Rectangle 135" width="25" height="25" fill="white" />
+                            <g id="Group 1000002324">
+                                <path id="Line 43" d="M3.125 3.125L22.4865 22.6562" stroke="black" stroke-width="1.5" />
+                                <path id="Line 44" d="M2.17397 22.6567L21.7507 3.13322" stroke="black"
+                                    stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+
+            <h2 class="modal__title">Добавить выступление</h2>
+
+            <form action="#" method="post" name="form-add-performances" class="form-add-performances"
+                enctype="multipart/form-data">
+                <div class="form-flex">
+                    <input type="date" name="date-performance" id="dateInput">
+                    <input type="time" name="time-performance">
+                    <input type="text" name="address-performance" placeholder="Место выступления (адрес)">
+                </div>
+                <button class="--green-button" type="submit">Добавить</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Посмотреть все выступления-->
+    <div class="modal-more-performances" id="my-modal-more-performances">
+        <div class="modal__box-more-performances">
+            <button class="modal__close-btn" id="close-my-modal-btn-more-performances">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="25" height="25" fill="#F8F3F3" />
+                    <g id="&#208;&#158;&#208;&#186;&#208;&#189;&#208;&#190; 10">
+                        <rect x="-812" y="-173" width="874" height="675" fill="#D7D7D7" />
+                        <rect x="-812" y="-173" width="874" height="675" stroke="black" stroke-width="4" />
+                        <g id="Group 1000002330">
+                            <rect id="Rectangle 135" width="25" height="25" fill="white" />
+                            <g id="Group 1000002324">
+                                <path id="Line 43" d="M3.125 3.125L22.4865 22.6562" stroke="black" stroke-width="1.5" />
+                                <path id="Line 44" d="M2.17397 22.6567L21.7507 3.13322" stroke="black"
+                                    stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+
+            <h2 class="modal__title">Все выступления:</h2>
+
+            <div class="form-flex">
+                <p>25/04/24 в 18:00 ул. Большая Покровская, д. 4 </p>
+                <p>25/04/24 в 18:00 ул. Большая Покровская, д. 4 </p>
+                <p>25/04/24 в 18:00 ул. Большая Покровская, д. 4 </p>
+                <p>25/04/24 в 18:00 ул. Большая Покровская, д. 4 </p>
+                <p>25/04/24 в 18:00 ул. Большая Покровская, д. 4 </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Добавить фото выступлений-->
+    <div class="modal-download-photos" id="my-modal-download-photos">
+        <div class="modal__box-download-photos">
+            <button class="modal__close-btn" id="close-my-modal-btn-download-photos">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="25" height="25" fill="#F8F3F3" />
+                    <g id="&#208;&#158;&#208;&#186;&#208;&#189;&#208;&#190; 10">
+                        <rect x="-812" y="-173" width="874" height="675" fill="#D7D7D7" />
+                        <rect x="-812" y="-173" width="874" height="675" stroke="black" stroke-width="4" />
+                        <g id="Group 1000002330">
+                            <rect id="Rectangle 135" width="25" height="25" fill="white" />
+                            <g id="Group 1000002324">
+                                <path id="Line 43" d="M3.125 3.125L22.4865 22.6562" stroke="black" stroke-width="1.5" />
+                                <path id="Line 44" d="M2.17397 22.6567L21.7507 3.13322" stroke="black"
+                                    stroke-width="1.5" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+
+            <h2 class="modal__title">Добавить фото выступлений</h2>
+
+            <form action="#" method="post" name="form-add-download-photos" class="form-add-download-photos"
+                enctype="multipart/form-data">
+                <div class="form-flex">
+                    <label for="qr-code">Загрузите ваши фотографии
+                        <input type="file" name="qr-code" multiple accept=".jpg, .jpeg, .png">
+                    </label>
+                </div>
+                <button class="--green-button" type="submit">Добавить</button>
+            </form>
+        </div>
+    </div>
+</section>

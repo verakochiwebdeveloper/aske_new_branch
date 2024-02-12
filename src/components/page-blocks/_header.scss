@@ -1,0 +1,129 @@
+.header {
+  &__wrapper {
+    background-color: #000;
+  }
+}
+
+.logo {
+  position: relative;
+  z-index: 3;
+  width: 285px;
+  height: 148px;
+  display: block;
+}
+
+.menu {
+  background: linear-gradient(270deg, #f860e6 0%, #e45201 100%); 
+}
+
+.menu__list {
+  width: 1156px;
+  background: linear-gradient(270deg, #f860e6 0%, #e45201 100%);
+  padding: 22px 0px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid #000;
+  &-item:last-child {
+    margin-right: 60px;
+  }
+
+  &-item:first-child {
+    margin-left: 60px;
+  }
+
+  &-link {
+    color: #000;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #fff;
+      transition: ease-in-out 0.3s;
+    }
+
+    &:active {
+      color: #dbfe01;
+    }
+  }
+}
+
+.header__about {
+  &-wrapper {
+    background: #dbfe01;
+    padding-top: 44px;
+    padding-bottom: 149px;
+    color: #030303;
+  }
+
+  &-title {
+    width: 690px;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+    margin: 0 auto;
+  }
+  &-text {
+    display: block;
+    width: 572px;
+    margin: 35px auto 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    text-indent: 70px;
+  }
+  &-background {
+    width: 1156px;
+    height: 130px;
+    background: linear-gradient(90deg, #ff6504 0.02%, #f860f5 99.95%);
+  }
+}
+
+.--indent-none {
+  text-indent: 1px;
+}
+
+.header__title {
+  width: 1440px;
+  position: relative;
+  top: 1115px;
+  right: 1380px;
+  z-index: 2;
+  font-family: "Paytone One", sans-serif;
+  font-size: 400px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  &-vertical {
+    color: #ff5fcf;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 0px;
+    right: -880px;
+    -webkit-text-stroke: 4px #000; /* Толщина и цвет обводки */
+    display: block;
+  }
+
+  &-horizontal {
+    color: #000;
+    position: absolute;
+    z-index: -1;
+    top: -320px;
+    left: 217px;
+    font-size: 312px;
+  }
+}
+
+
+
+

@@ -1,0 +1,152 @@
+*{box-sizing: border-box;}
+
+.container {
+    margin: 0 auto;
+    background-color: #2A2929;
+    border-right: 4px solid #000;
+    border-left: 4px solid #000;
+    border-bottom: 4px solid #000;
+    max-width: 1430px;
+}
+
+
+/* page */
+
+
+.page-mailCompleted {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: -1px auto 0;
+}
+
+.page_logo-mailCompleted {
+    width: 246px;
+    height: 176px;
+    margin: 31px auto 0;
+}
+
+.page_title-mailCompleted {
+    color: #FFF;
+    text-align: center;
+    font-family: "Paytone One";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.title_pink {
+    color: #F860ED;
+}
+
+.title_green {
+    color: #DBFE01;
+}
+
+@media screen and (width < 1440px){
+
+    .page_title-mailCompleted {
+        font-size: 64px;
+        width: 451px;
+        height: 81px;
+        margin: 21px auto 0px;
+    }
+
+    .page_logo-mailCompleted {
+        width: 220px;
+        height: 142px;
+        margin-top: 104px;
+    }
+}
+
+@media screen and (width < 744px){
+
+    .page_logo-mailCompleted {
+        width: 102px;
+        height: 69px;
+        margin-top: 32px;
+
+    }
+
+    .page_title-mailCompleted {
+        font-size: 28px;
+        width: 269px;
+        margin: 5px auto 0px;
+        height: 100%;
+    }
+}
+
+
+/* account */
+
+.account-mailCompleted {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 31px auto 0px;
+}
+
+.account_title-mailCompleted {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.account_title-information-mailCompleted {
+    color: #FFF;
+    width: 412px;
+    text-align: center;
+    font-family: "Roboto";
+    margin: 60px auto 217px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+@media screen and (width < 1440px){
+    .account-mailCompleted {
+        width: 438px;
+        margin-top: 118px;
+    }
+
+    .account_title-mailCompleted {
+        font-size: 32px;
+        width: 310px;
+        margin: 0 auto;
+    }
+
+    .account_title-information-mailCompleted {
+        width: 378px;
+        margin: 160px auto 260px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (width < 744px){
+    .account-mailCompleted {
+        width: 270px;
+        margin-top: 102px;
+    }
+
+    .account_title-mailCompleted {
+        font-size: 24px;
+        width: 233px;
+        margin: 0 auto;
+    }
+
+    .account_title-information-mailCompleted {
+        width: 255px;
+        margin: 130px auto 230px;
+        font-size: 20px;
+    }
+
+}

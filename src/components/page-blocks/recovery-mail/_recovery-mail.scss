@@ -1,0 +1,259 @@
+*{box-sizing: border-box;}
+
+.container-recoveryEmail {
+    margin: 0 auto;
+    background-color: #2A2929;
+    border-right: 4px solid #000;
+    border-left: 4px solid #000;
+    border-bottom: 4px solid #000;
+    max-width: 1430px;
+}
+
+/* page */
+
+
+.page-recoveryEmail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: -25px auto 0;
+}
+
+.page_logo-recoveryEmail {
+    display: none;
+    width: 102px;
+    height: 69px;
+    margin: 0 auto;
+}
+
+.page_title-recoveryEmail {
+    color: #FFF;
+    text-align: center;
+    font-family: "Paytone One";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.title_pink {
+    color: #F860ED;
+}
+
+.title_green {
+    color: #DBFE01;
+}
+
+@media screen and (width < 1440px){
+    .page-recoveryEmail {
+        margin: -2px 0 0;
+    }
+
+    .page_title-recoveryEmail {
+        font-size: 64px;
+        width: 451px;
+        height: 81px;
+        margin: 87px auto 0px;
+    }
+}
+
+@media screen and (width < 744px){
+    .page_logo-recoveryEmail {
+        margin-top: 32px;
+        display: block;
+    }
+
+    .page_title-recoveryEmail {
+        font-size: 28px;
+        width: 269px;
+        margin: 5px auto 0px;
+        height: 100%;
+    }
+}
+
+
+/* account */
+
+.account-recoveryEmail {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 31px auto 0px;
+}
+
+.account_title-recoveryEmail {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.account_input-title-recoveryEmail {
+    color: #DBFE01;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 5px 4px;
+}
+
+.account_wrapper-recoveryEmail {
+    margin-top: 70px;
+}
+
+.account_input-recoveryEmail {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    color: #000;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.account_input-recoveryEmail:hover {
+    border: 3px solid #DBFE01;
+}
+
+.account_input-recoveryEmail:focus {
+    border: 3px solid #F860F5;
+    outline: none;
+}
+
+.account_input-information-recoveryEmail {
+    margin-top: 31px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.account_login-recover-recoveryEmail {
+    width: 100%;
+    height: 60px;
+    background: #F860F5;
+    margin: 90px auto 0;
+    color: #000;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.account_login-recover-recoveryEmail:hover {
+    background-color: #DBFE01;
+}
+
+.account_login-recover-recoveryEmail:active {
+    border: #F860F5 5px solid;
+    background-color: #DBFE01;
+}
+
+.account_login-recoveryEmail {
+    width: 100%;
+    height: 60px;
+    color: #000;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 30px auto 142px;
+    background: #DBFE01;
+    cursor: pointer;
+}
+
+.account_login-recoveryEmail:hover {
+    background-color: #F860F5;
+}
+
+.account_login-recoveryEmail:active {
+    border: #DBFE01 5px solid;
+    background-color: #F860F5;
+}
+
+
+
+@media screen and (width < 1440px){
+    .account-recoveryEmail {
+        width: 438px;
+        margin-top: 50px;
+    }
+
+    .account_title-recoveryEmail {
+        font-size: 32px;
+        width: 310px;
+        margin: 0 auto;
+    }
+
+    .account_wrapper-recoveryEmail {
+        margin-top: 100px;
+    }
+
+    .account_input-information-recoveryEmail {
+        margin-top: 29px;
+        font-size: 16px;
+    }
+
+    .account_login-recover-recoveryEmail {
+        margin-top: 160px;
+    }
+
+    .account_login-recoveryEmail {
+        margin: 37px auto 160px;
+    }
+}
+
+@media screen and (width < 744px){
+    .account-recoveryEmail {
+        width: 270px;
+        margin-top: 50px;
+    }
+
+    .account_title-recoveryEmail {
+        font-size: 24px;
+        width: 233px;
+        margin: 0 auto;
+    }
+
+    .account_wrapper-recoveryEmail {
+        margin-top: 60px;
+    }
+
+    .account_input-title-recoveryEmail {
+        font-size: 16px;
+    }
+
+    .account_login-recover-recoveryEmail {
+        margin-top: 80px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .account_login-recoveryEmail {
+        font-size: 16px;
+        height: 48px;
+        margin: 37px auto 93px;
+    }
+
+    .account_input-recoveryEmail {
+        height: 48px;
+        font-size: 16px;
+    }
+
+}

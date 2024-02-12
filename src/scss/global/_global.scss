@@ -1,0 +1,264 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.--just-space {
+	justify-content: space-between;
+}
+
+.--just-center {
+	justify-content: center;
+}
+
+.--just-end {
+	justify-content: flex-end;
+}
+
+.--align-str {
+	align-items: stretch;
+}
+
+.--align-center {
+	align-items: center;
+}
+
+.--align-end {
+	align-items: flex-end;
+}
+
+.--dir-col {
+	flex-direction: column;
+}
+
+html {
+	font-size: 16px;
+}
+
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	color: #000;
+	
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,li {
+	list-style: none;
+	padding: 0;
+}
+
+:root{
+	// colors:
+	--color-dark: #2A2929;
+	--color-grey: #D9D9D9;
+	--color-pink: #F860E4;
+}
+
+.full__container {
+	width: 1430px;
+	margin: 0 auto;
+	border: 4px solid #000;
+	overflow: hidden;
+	  
+}
+
+.--bg-post-marker {
+	width: 1430px;
+	margin: 0 auto;
+	position: relative;
+	
+	  &::before {
+		content: url(../img/postkl.svg);
+		z-index: 20;
+		position: absolute;
+		width: 524px;
+		height: 100px;
+		top: -95px;
+		left: 762px;
+	  }
+}
+
+.--container-color-black {
+	background-color: #000;
+} 
+
+.--container-color-gray {
+	background: #D7D7D7;
+}
+
+.--container-border {
+	border: 4px solid #000;
+}
+
+.--container-border-top-none {
+	border-top: none;
+}
+
+.--container-border-down-none {
+	border-bottom: none;
+}
+
+.--container-border-down {
+	border-bottom: 4px solid #000;
+}
+
+
+
+.--padding__posts {
+	padding: 0 160px;
+} 
+
+.--bg-color-lightgreen {
+	background: #DBFE01;
+}
+
+.--bg-color-black {
+	background: #000;
+	color: #fff;
+}
+
+.--bg-color-purple {
+	background: #7199FF;
+}
+
+
+
+.--link-style {
+	border: 2px solid #000;
+  background: #e45201;
+  box-shadow: 0px 2px 2px 0px #000;
+  color: #030303;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 12px 24px;
+  display: block;
+  margin-top: 50px;
+
+  &:hover {
+    background: #fff;
+    transition: ease-in-out 0.2s
+  }
+
+  &:active {
+    border: 2px solid #E45201;
+    color: #E45201;
+  }
+}
+
+.--border-mod-none {
+	border-right:none;
+	border-bottom:none;
+}
+
+.--green-button {
+	color: #111;
+  
+	font-family: "Roboto", sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	border: 2px solid #000;
+	background: #dbfe01;
+	box-shadow: 0px 2px 2px 0px #000;
+	padding: 15px 80px;
+	display: block;
+	margin: 100px auto;
+	width: 384px;
+  
+	&:hover {
+	  transition: ease-in 0.2s;
+	  background: #fff;
+	}
+  
+	&:active {
+	  background: #000;
+	  color: #fff;
+	}
+  }
+
+
+  .--background-office {
+	background-color: #292929;
+  }
+
+
+
+@media screen and (width < 744px){
+	.height-background {
+		background-color: #2A2929;
+		border-right: 4px solid #000;
+		border-left: 4px solid #000;
+		border-bottom: 4px solid #000;  
+	}
+
+	.container {
+		border-right: none;
+		border-left: none;
+		border-bottom: none	
+	}
+}
+
+.--padding__posts {
+	@media screen and (width < 1280px) and (width >= 744px) {
+		padding: 0 80px;
+	}
+
+	@media screen and  (width < 575px) {
+		padding: 0 20px;
+	}
+}
+
+.terms-text {
+	display: block;
+	font-size: 16px;
+	padding: 49px;
+
+	.list__terms {
+		/* убираем стандартную нумерацию */
+		list-style: none;
+		/* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+		counter-reset: li;
+	 }
+	 .list__terms-item:before {
+		/* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+		counter-increment: li;
+		/* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+		content: counters(li, ".") ". ";
+	 }
+}
+
+.policy-link {
+	color: #fff;
+	text-decoration: underline;
+}

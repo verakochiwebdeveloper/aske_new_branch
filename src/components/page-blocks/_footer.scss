@@ -1,0 +1,117 @@
+.footer {
+  &__wrapper {
+    padding: 67px 85px 22px 85px;
+  }
+
+  &__info {
+    width: 702px;
+    &-text {
+      margin-top: 132px;
+      color: #fff;
+      font-family: "Rubik";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+}
+
+.footer__material {
+  &-text,
+  &-link {
+    color: #fff;
+
+    font-family: "Rubik";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &-link {
+    text-decoration-line: underline;
+  }
+}
+
+.footer__links {
+  width: 302px;
+
+  &-title {
+    font-family: "Rubik";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+
+.footer__list {
+  margin-top: 25px;
+
+  &-item {
+    margin-bottom: 17px;
+    position: relative;
+    top: 0;
+    left: 0;
+    &::before {
+      position: absolute;
+      content: url(../img/chevron-right.svg);
+      width: 21px;
+      height: 21px;
+      top: 3%;
+      left: -10px;
+    }
+  }
+
+  &-link {
+    color: #fff;
+    font-family: "Rubik";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px;
+
+    &:hover {
+      color: #dbfe01;
+      transition: ease-out 0.2s;
+    }
+
+    &:active {
+      background: #fff;
+    }
+  }
+}
+
+.footer__telegram {
+  display: block;
+  margin-left: 1020px;
+}
+
+.tg-icon {
+  &:hover {
+    fill: #dbfe01;
+  }
+
+  &:active {
+    fill: #00cfff;
+  }
+}
+
+.footer__developer {
+  margin-top: 100px;
+  text-align: center;
+
+  &-link {
+    color: #fff;
+    text-align: center;
+    font-family: "Rubik";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-variant: small-caps;
+  }
+}

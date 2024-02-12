@@ -1,0 +1,546 @@
+.calendar { 
+    margin: 0 auto;
+    background-color: #D9D9D9;
+    max-width: 1430px;
+    width: 100%;
+    border-right: 4px black solid;
+    border-left: 4px black solid;
+    border-bottom: 4px black solid;
+}
+
+.calendar-background {
+    margin: 0 auto;
+    background-color: #D9D9D9;
+    max-width: 1430px;
+}
+
+.calendar_title {
+    width: 449px;
+    margin: -21px auto 0px;
+    background-color: #7199FF;
+    color: #000;
+    font-family: "Roboto Condensed";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.calendar_wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 124px;
+}
+
+.calendar_table {
+    border: 4px black solid;
+    margin: 57.5px 43px 0px 51px;
+    padding: 20px 0px 0px;
+    background-color: white;
+    width: 801px;
+    height: 627px;
+    z-index: 5;
+}
+
+.calendar_months {
+    display: flex;
+    margin: 0 220px 0;
+    justify-content: center;
+}
+
+.calendar_strelka {
+    align-self: center;
+    height: 15px;
+    width: 23px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.calendar_month {
+    color: black;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 220px 0;
+}
+
+.calendar_name-day {
+    color: #B3B3B3;
+    text-align: center;
+    align-self: center;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.calendar_days {
+    display: grid;
+    height: calc(100% - 34px);
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.calendar_day {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    align-self: center;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 46px;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.calendar_close {
+    display: none;
+    background-color: #DBFE01;
+    border: none;
+}
+
+.calendar_close-img {
+    background-color: #DBFE01;
+    align-self: center;
+}
+
+.calendar_invent {
+    z-index: 5;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.invent_title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: #DBFE01;
+    width: 500px;
+    height: 67px;
+    margin: 57.5px 0px 0px;
+    border: 4px solid var(--black, #000);
+    padding: 10px;
+}
+
+.invent_title {
+    color: black;
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: #DBFE01;
+    align-self: center;
+}
+
+.inventlist {
+    width: 500px;
+    min-height: 50px;
+    background-color: white;
+    margin: 0;
+    border-bottom: 4px solid var(--black, #000);
+    border-left: 4px solid var(--black, #000);
+    border-right: 4px solid var(--black, #000);
+}
+
+.inventlist-full {
+    display: none;
+    background-color: #F1F1F1;
+    margin: 0;
+    overflow: scroll;
+    max-height: 556px;
+}
+
+.inventlist-full-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background: rgb(241, 241, 241);
+}
+
+.inventlist-full-div:last-child {
+    border: none;
+}
+
+.inventlist-full-text {
+    color: black;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.inventlist-full-text:first-child {
+    margin-top: 0px;
+}
+
+
+.inventlist-none {
+    display: none;
+    background-color: #F1F1F1;
+    margin: 0;
+    height: 556px;
+}
+
+.inventlist-none_title {
+    width: 488px;
+    color: black;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 50px 0 0;
+    margin: 0 auto;
+}
+
+.inventlist_smile {
+    display: flex;
+    width: 170px;
+    height: 170px;
+    margin: 103px auto 0;
+}
+
+.inventlist-comleted {
+    display: none;
+    background-color: #F1F1F1;
+    margin: 0;
+    height: 556px;
+}
+
+.inventlist-comleted_title {
+    width: 488px;
+    color: black;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 50px 0 0;
+    margin: 0 auto;
+}
+
+.inventlist-comleted_img {
+    display: flex;
+    width: 170px;
+    height: 170px;
+    margin: 103px auto 0;
+}
+
+.calendar_wrapper-data {
+    display: none;
+    position: relative;
+    width: 451px;
+    background-color: white;
+    border: 4px solid black;
+    margin: 0 0 71px 0;
+    z-index: 50;
+}
+
+
+
+.calendar_footer {
+    width: 100%;
+    height: 220px;
+    background-color: #292929;
+    padding: 20px 0 0 20px;
+}
+
+.calendar_footer-data {
+    position: relative;
+    width: 451px;
+    background-color: white;
+    border: 4px solid black;
+    margin: 0 0 71px 0;
+    z-index: 50;
+}
+
+.calendar_footer-datainfo {
+    display: flex;
+    margin-bottom: 15px;
+    margin-left: 11px;
+}
+
+.calendar_footer-datainfo:first-child {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+
+}
+
+.datainfo_text {
+    position: absolute;
+    left: 65px;
+    align-self: center;
+    color: rgb(0, 0, 0);
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0%;
+}
+
+
+.clicks_svg {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.clicks_svg::after {
+    position: absolute;
+    z-index: 1;
+    top: 600px;
+    left: 0;
+    content: " ";
+    background: url(../img/calendar-footer.svg);
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (width < 1440px ){
+    .calendar {
+        padding: 20px 0 0 0;
+    }
+
+    .calendar_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .calendar_table {
+        margin: 31px auto 150px;
+        width: 676px;
+        height: 522px;
+    }
+
+    .calendar_title {
+        width: 253px;
+        font-size: 20px;
+    }
+
+    .calendar_invent {
+        margin: 30px auto 70px;
+    }
+
+    .calendar_footer-data {
+        display: none;
+    }
+
+    .invent_title-wrapper {
+        margin: 0;
+    }
+
+    .calendar_footer {
+        display: none;
+    }
+
+    .calendar_wrapper {
+        padding: 0;
+    }
+
+    .calendar_wrapper-data {
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    .invent_background {
+        background-color: #292929;
+        z-index: 5;
+    }
+
+    .clicks_svg::after {
+        top: 470px;
+        width: 100%;
+    }
+
+
+}
+
+
+@media screen and (width < 744px ){
+    .calendar_title {
+        margin: 20px auto 0;
+    }
+
+    .calendar_table {
+        width: 336px;
+    }
+
+    .calendar_day {
+        width: 30px;
+    }
+
+    .calendar_month {
+        margin: 0 42px 0;
+    }
+
+    .calendar_months {
+        margin: 0;
+    }
+
+    .calendar_wrapper-data {
+        display: none;
+    }
+
+    .calendar_invent {
+        display: none;
+        position: absolute;
+        top: -63px;
+        left: 0px;
+        width: 100%;
+    }
+
+    .invent_title-wrapper {
+        width: 100%;
+    }
+
+    .inventlist {
+        width: 100%;
+        min-height: 600px;
+        background-color: #f1f1f1;
+    }
+
+    .inventlist-full {
+        display: none;
+        background-color: #F1F1F1;
+        margin: 0;
+        overflow: scroll;
+        max-height: 556px;
+    }
+
+    .inventlist-comleted_title {
+        width: 200px;
+    }
+
+    .inventlist-none_title {
+        width: 270px;
+    }
+
+    .calendar_footer {
+        display: block;
+        padding: 0;
+    }
+
+    .calendar_footer-data {
+        display: block;
+        margin: 0 auto;
+        width: 336px;
+    }
+
+    .calendar_close {
+        display: flex;
+    }
+
+}
+
+
+
+
+@media screen and (width < 1000px ){
+    .clicks_svg::after {
+        background: url(../img/calendar-footer1000.svg);
+        background-repeat: no-repeat;
+        }
+}
+
+
+@media screen and (width < 744px ){
+    .clicks_svg::after {
+        background: url(../img/calendar-footer744.svg);
+        top: 510px;
+        }
+}
+
+@media screen and (width < 500px ){
+    .clicks_svg::after {
+        background: url(../img/calendar-footer500.svg);
+    }
+}
+
+@media screen and (width < 360px ){
+    .clicks_svg::after {
+        background: url(../img/calendar-footer360.svg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.border_date {
+    border: 2px solid black;
+}
+
+.display_none {
+    display: none;
+}
+
+.display_block {
+    display: block;
+}
+
+
+.othermonth {
+    color: #B3B3B3 !important;
+    cursor: auto;
+}
+
+.calendar_pink {
+    color: #F860F5;
+}
+
+.calendar_current-day {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.calendar_current-day::after {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    top: -50%;
+    left: -50%;
+    width: 100px;
+    height: 70px;
+    background-image: url('../img/current-day.svg');
+}
+
+@media screen and (width < 744px ){
+    .calendar_current-day::after {
+        top: -25%;
+        left: -40%;
+        background-image: url('../img/current-day360.svg');
+        background-repeat: no-repeat;
+    }
+}
+
+.background_date {
+    background: #E45202;
+}

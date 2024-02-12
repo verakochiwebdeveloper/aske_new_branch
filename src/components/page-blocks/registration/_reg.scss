@@ -1,0 +1,317 @@
+*{box-sizing: border-box;}
+
+.container {
+    margin: 0 auto;
+    background-color: #2A2929;
+    border-right: 4px solid #000;
+    border-left: 4px solid #000;
+    border-bottom: 4px solid #000;
+    max-width: 1430px;
+    min-height:1000px
+}
+
+
+/* page */
+
+
+.page-registration {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.page_logo-registration {
+    display: none;
+    width: 102px;
+    height: 69px;
+    margin: 0 auto;
+}
+
+.page_img-registration {
+    margin: 12px auto 0;
+    width: 1312px;
+    height: 341px;
+}
+
+.page_title-registration {
+    display: none; 
+    color: #FFF;
+    text-align: center;
+    font-family: "Paytone One";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    font-size: 28px;
+    width: 269px;
+    margin: 13px auto 0px;
+}
+    
+.title_pink {
+    color: #F860ED;
+}
+    
+.title_green {
+    color: #DBFE01;
+}
+
+@media screen and (width < 1440px){
+
+    .page-registration {
+        margin: -2px auto 0;
+    }
+
+    .page_img-registration {
+        width: 675px;
+        height: 223px;
+        margin-top: 62px;
+    }
+
+}
+
+@media screen and (width < 744px){
+
+    .page_img-registration {
+        display: none;
+    }
+
+    .page_logo-registration {
+        margin-top: 32px;
+        display: block;
+    }
+
+    .page_title-registration {
+        display: block;
+    }
+
+}
+
+
+/* account */
+
+.account-registration {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0px auto;
+}
+
+.account_title-registration {
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.account_input-title-registration {
+    color: #DBFE01;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 5px 4px;
+}
+
+.account_wrapper-registration:nth-child(3) {
+    margin-top: 5px;
+}
+
+.account_wrapper-registration:nth-child(4) {
+    margin-top: 15px;
+}
+
+.account_input-registration {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    color: #000;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.account_input-registration:hover {
+    border: 3px solid #DBFE01;
+}
+
+.account_input-registration:focus {
+    border: 3px solid #F860F5;
+    outline: none;
+}
+
+.account_mail-registration {
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.account_confirmation-registration {
+    display: flex;
+    margin-left: 9px;
+}
+
+.account_confirmation-information-registration {
+    color: #FFF;
+    margin-left: 7px;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.account_disabled-registration {
+    display: none;
+    color: #F85757;
+    text-align: center;
+    margin-top: 19px;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.account_login-registration {
+    width: 100%;
+    height: 60px;
+    background: #DBFE01;
+    margin: 17px auto 0;
+    color: #000;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.account_login-registration:hover {
+    background-color: #F860F5;
+}
+
+.account_login-registration:active {
+    border: #F860F5 5px solid;
+    background-color: #DBFE01;
+}
+
+.account_registering-registration {
+    margin: 8px auto;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.account_registering-link-registration {
+    color: #FFF;
+}
+
+.account_registering-link-registration:hover {
+    color: #DBFE01
+}
+
+.account_registering-link-registration:active {
+    background-color: #DBFE01;
+    color: white
+}
+
+
+@media screen and (width < 1440px){
+    .account-registration {
+        width: 438px;
+        margin-top: 31px;
+    }
+
+    .account_wrapper-registration:nth-child(3) {
+        margin-top: 32px;
+    }
+    
+    .account_wrapper-registration:nth-child(4) {
+        margin-top: 38px;
+    }
+
+    .account_disabled-registration {
+        margin-top: 40px;
+    }
+
+    .account_login-registration {
+        margin-top: 60px;
+    }
+
+    .account_registering-registration {
+        margin: 13px auto 50px;
+    }
+}
+
+@media screen and (width < 744px){
+    .account-registration {
+        width: 270px;
+        margin-top: 32px;
+    }
+
+    .account_title-registration {
+        font-size: 20px;
+    }
+
+    .account_wrapper-registration:nth-child(3) {
+        margin-top: 12px;
+    }
+    
+    .account_wrapper-registration:nth-child(4) {
+        margin-top: 12px;
+    }
+
+    .account_mail-registration {
+        font-size: 13px;
+    }
+
+    .account_disabled-registration {
+        font-size: 16px;
+    }
+
+    .account_confirmation-information-registration {
+        font-size: 12px;
+    }
+
+    .account_input-title-registration {
+        font-size: 16px;
+    }
+
+    .account_login-registration {
+        margin-top: 43px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .account_registering-registration {
+        margin: 14px auto 108px;
+        font-size: 13px;
+    }
+
+    .account_input-registration {
+        height: 38px;
+        font-size: 16px;
+    }
+    
+    .container {
+		border-right: none;
+		border-left: none;
+		border-bottom: none	
+	}
+}

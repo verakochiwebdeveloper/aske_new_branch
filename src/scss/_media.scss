@@ -1,0 +1,462 @@
+.menu__burger {
+  display: none;
+}
+
+// Большие девайсы (большие десктопы, < 1200px)
+@media (max-width: 1400px) {
+  .full__container {
+    width: 1280px;
+  }
+
+  .menu__list {
+    width: 1000px;
+  }
+
+  .menu__list-link {
+    font-size: 25px;
+  }
+
+  .header__title-horizontal {
+    font-size: 270px;
+  }
+  .heroes__line {
+    width: 1280px;
+  }
+
+  .--bg-post-marker {
+    width: 1280px;
+  }
+
+  .heroes__line::after {
+    width: 1280px;
+  }
+
+  .heroes__item-cover {
+    width: 640px;
+    height: 577px;
+    padding: 20px 75px;
+    height: 606px;
+  }
+
+  .heroes__item-title {
+    font-size: 26px;
+    top: 15%;
+  }
+
+  .--bg-post-marker::before {
+    left: 96px;
+  }
+  .post__title {
+    margin-top: 150px;
+    text-align: center;
+  }
+  .post__wrapper {
+    margin: 200px auto;
+  }
+}
+/*
+@media (max-width: 991.98px) {
+  .full__container {
+    width: 800px;
+  }
+  .logo__image {
+    width: 181px;
+  }
+
+  .heroes__line {
+    width: 767px;
+  }
+
+  .heroes__line::after {
+    width: 767px;
+  }
+}
+*/
+// Малые девайсы («ландшафтные», < 768px)
+@media screen and (width < 1280px) and (width >= 744px) {
+  .full__container {
+    width: 767px;
+  }
+
+  .heroes__line {
+    width: 767px;
+  }
+
+  .heroes__line::after {
+    width: 767px;
+    background: url(../img/klline700svg.svg);
+    top: 531px;
+    transform: rotate(-2deg);
+  }
+
+  .logo__image {
+    width: 181px;
+  }
+  .menu__list {
+    width: 588px;
+  }
+
+  .menu__list-item:first-child {
+    margin-left: 20px;
+  }
+  .menu__list-link {
+    font-size: 20px;
+  }
+
+ 
+
+  .header__about {
+    width: 767px;
+  }
+
+  .header__about-wrapper {
+    padding-top: 44px;
+    padding-bottom: 74px;
+  }
+
+  .header__about-image {
+    width: 572px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .header__title {
+    width: 767px;
+    top: 660px;
+    font-size: 225px;
+    right: 1315px;
+  }
+
+  .header__title-horizontal {
+    font-size: 163px;
+    top: -142px;
+    left: 526px;
+  }
+
+  .header__about-title {
+    font-size: 20px;
+    width: 540px;
+    margin: 0 15px;
+  }
+
+  .header__about-text {
+    width: 524px;
+    margin: 16px;
+  }
+  .header__about-background {
+    width: 767px;
+    height: 60px;
+  }
+
+  .heroes__title {
+    font-size: 50px;
+    width: 345px;
+    display: block;
+    margin: 0 12px;
+  }
+
+  .heroes__item-cover {
+    width: 380px;
+    padding: 20px;
+    height: 466px;
+  }
+  .heroes__item-pic {
+    width: 11rem;
+    height: 15rem;
+  }
+
+  .heroes__all {
+    margin: 167px 70px;
+  }
+
+  .heroes__item-title {
+    width: 9rem;
+    font-size: 20px;
+    top: 25%;
+  }
+
+  .heroes__item-block {
+    margin-top: 59px;
+  }
+
+  .heroes__item-link {
+    margin-top: 18px;
+  }
+  .heroes__item-text {
+    font-size: 18px;
+  }
+  .heroes__search {
+    padding: 50px 30px;
+    background: #fff;
+  }
+  .heroes__itme-label {
+    width: 40%;
+  }
+  .heroes__search-link {
+    padding: 25px;
+  }
+
+  .--bg-post-marker {
+    width: 767px;
+    &::before {
+      left: 100px;
+      top: 0;
+    }
+  }
+
+  .post__title {
+    margin-top: 300px;
+  }
+
+  .post__data {
+    text-align: center;
+  }
+
+  .post__text {
+    width: 588px;
+
+  }
+
+  .footer__telegram {
+    text-align: center;
+  }
+
+  .footer__links {
+    display: none;
+  }
+  .footer__material-text {
+    font-size: 19px;
+  }
+
+  
+}
+
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px) {
+  .heroes__line {
+    width: 360px;
+    &::after {
+      width: 360px;
+      top: 700px;
+      background: url(../img/klline500.svg);
+      background-repeat: no-repeat;
+    }
+  }
+  .full__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header__wrappe {
+    width: 100%;
+  }
+
+  .logo {
+    width: 78px;
+    height: 61px;
+  }
+  .logo__image {
+    width: 78px;
+    height: 61px;
+  }
+
+  .menu__burger {
+    display: block;
+  }
+  .menu {
+    padding: 10px;
+  }
+  .menu__list {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    width: 200px;
+    justify-content: center;
+    border: solid 4px #000;
+    transform: translateX(250px);
+  }
+
+  .menu__burger {
+    background: none;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+    transform: translateX(180px);
+    transition: ease-in-out 0.5s;
+  }
+
+  .menu__burger-line {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 5px;
+    background: #000;
+  }
+
+  .menu__burger-line::after,
+  .menu__burger-line::before {
+    content: " ";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 33px;
+    height: 5px;
+    background: #000;
+  }
+
+  .menu__burger-line::before {
+    top: -10px;
+  }
+
+  .menu__burger.active div {
+    background: none;
+  }
+
+  .menu__list.active {
+    display: block;
+    transform: translateX(40px);
+    transition: ease-in-out 0.5s;
+  }
+
+  .menu__burger.active div::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .menu__burger.active div::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .header__about-image {
+    width: 281px;
+    height: 229px;
+  }
+
+  .header__about {
+    &-title {
+      width: 279px;
+      font-size: 20px;
+    }
+  }
+
+  .header__about-wrapper {
+    background: #dbfe01;
+    padding-top: 44px;
+    padding-bottom: 149px;
+    color: #030303;
+    width: 280px;
+  }
+
+  .header__about-title {
+    padding: 10px;
+  }
+  .header__about-background {
+    display: none;
+  }
+
+  .heroes__item-pic {
+    width: 11rem;
+    height: 15rem;
+  }
+  .heroes__item-title {
+    width: 60%;
+    padding: 10px 30px;
+    font-size: 16px;
+    left: 100px;
+    
+  }
+
+  .heroes__item-link {
+    font-size: 11px;
+    padding: 11px 30px;
+  }
+
+  .header__about-text {
+    display: block;
+    width: 100%;
+    margin: 3px auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    text-indent: 9px;
+    padding: 15px;
+  }
+  .header__title {
+    font-size: 16px;
+    width: 360px;
+    top: 543px;
+  }
+
+  .heroes__line::after {
+    top: 815px;
+  }
+
+  .header__title-vertical {
+    right: -356px;
+    font-size: 88px;
+    top: -255px;
+  }
+
+  .header__title-horizontal {
+    font-size: 32px;
+  }
+
+  .heroes__title {
+    width: 360px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .--bg-post-marker {
+    width: 360px;
+    left: 0;
+  }
+
+  .--bg-post-marker::before {
+    display: none;
+  }
+  .heroes__itme-label {
+    width: 49%;
+  }
+
+  .heroes__item-cover {
+    max-width: 360px;
+    padding: 10px;
+
+  }
+
+  .heroes__item-cover {
+    height: 400px;
+  }
+  .heroes__item-block {
+    margin-top: 53px;
+  }
+
+  .--bg-post-marker::before {
+    display: none;
+  }
+  .post__text {
+    width: 300px;
+  }
+
+  .post__title {
+    font-size: 36px;
+    width: 300px;
+  }
+  .post__data {
+    text-align: center;
+  }
+  .header__title-horizontal {
+    font-size: 16px;
+  }
+}
+
+// Экстрабольшие девайсы (большие десктопы)
+// Тут нет @media, т.к. такие брейпкойнты не имеют верхней границы по ширине width

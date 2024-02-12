@@ -1,0 +1,181 @@
+.--catalog-line {
+  position: relative;
+
+  top: 0;
+  left: 0;
+
+  &::before {
+    content: url(../img/2929.svg);
+    z-index: 20;
+    position: absolute;
+    width: 1440px;
+    height: 100px;
+    top: -420px;
+    left: 0px;
+  }
+}
+
+.catalog__title {
+  color: #000;
+  font-family: "Roboto Condensed";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: #7199ff;
+  text-transform: uppercase;
+  width: 315px;
+  text-align: center;
+  display: block;
+  margin: 120px auto;
+}
+.--bg-catalog {
+  background: rgb(215, 215, 215);
+}
+
+.catalog-pages__wrapper {
+  margin-top: 106px;
+  margin-left: 106px;
+  margin-bottom: 250px;
+}
+
+.catalog-page__link {
+  color: #000;
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-decoration-line: underline;
+  position: relative;
+  top: 0;
+  left: 300px;
+}
+
+.catalog-page__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/vectorlink.svg);
+  width: 1000px;
+  height: 282px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 27;
+}
+
+.popup-content {
+  background-color: #fff;
+  width: 50%;
+  max-width: 475px;
+  margin: 5% auto;
+  padding: 20px 55px;
+  
+} 
+.filter__title {
+  text-align: center;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+
+
+label {
+  display: block;
+}
+
+.custom-checkbox {
+  position: relative;
+  cursor: pointer;
+  margin-top: 20px;
+  left: 50px;
+}
+
+.custom-checkbox-input {
+  display: none;
+}
+
+.custom-checkbox-span {
+  position: absolute;
+  top: 0px;
+  left: -40px;
+  height: 20px;
+  width: 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  background: rgb(219, 254, 1);
+}
+
+.custom-checkbox-input:checked + .custom-checkbox-span {
+  background: rgb(228, 82, 1);
+  box-sizing: border-box;
+  border: 2px solid rgb(219, 254, 1);
+  width: 20px;
+  height: 20px;
+}
+
+.custom-checkbox-span::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox-input:checked + .custom-checkbox-span::after {
+  display: block;
+}
+
+.custom-checkbox-input:checked + .custom-checkbox-span::after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.artistic-genres__select {
+  width: 360px;
+  margin-top: 10px;
+}
+
+.artistic-genres__title, .filter-data__data, .form__filter-title {
+  font-family: " Roboto";
+  font-weight: 700;
+  font-size: 25px;
+  margin: 15px 0;
+  padding-bottom: 2px;
+}
+
+.form__filter-title {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.filter-submit {
+  cursor: pointer;
+  margin: 15px auto;
+}
+
+
+.catalog__wrraper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__wrraper-left {
+  
+}

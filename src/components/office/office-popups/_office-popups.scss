@@ -1,0 +1,171 @@
+.popups {
+    // height: 0;
+}
+
+.popups input{
+    border: 1px solid #DBFE01;
+    height: 45px;
+    padding-inline: 10px;
+}
+
+.popups textarea{
+    border: 1px solid #DBFE01;
+    height: 150px;
+    padding-inline: 10px;
+}
+
+.popups input[type="file"]{
+    border: none;
+}
+.popups input[type="file"]:hover {
+    border: none;
+}
+
+.popups input:hover {
+    border: 3px solid #F860F5;
+}
+
+.popups input:focus {
+    border: 3px solid #DBFE01;
+    outline: none;
+}
+
+.popups textarea:hover {
+    border: 3px solid #F860F5;
+}
+
+.popups textarea:focus {
+    border: 3px solid #DBFE01;
+    outline: none;
+}
+
+.qr-code input:hover {
+    border: none;
+}
+
+
+
+.modal,
+.modal-social-networks,
+.modal-add-performances,
+.modal-more-performances,
+.modal-download-photos {
+    /* фиксируем фон (подложку) модального окна и растягиваем его на весь экран */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, .3);
+
+    /* центрируем модальное окно */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    /* добавляем прокрутку для модально окна по вертикали (y)*/
+    overflow-y: auto;
+
+
+    /* скрываем фон (подложку) и само модальное окно  */
+    visibility: hidden;
+    opacity: 0;
+
+    /* добавляем анимацию */
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal__box,
+.modal__box-social-networks,
+.modal__box-add-performances,
+.modal__box-more-performances,
+.modal__box-download-photos {
+    position: relative;
+
+    max-width: 900px;
+    padding: 45px;
+
+    // шрифт
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
+
+    /* что бы модальное окно не "прилипало" к верху и низу */
+    margin: 30px 15px;
+
+    z-index: 1;
+    background-color: #D7D7D7;
+    border: 4px solid #000;
+
+    /* тень */
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+    /* уменьшаем модальное окно для эффекта "выпрыгивания" */
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.modal__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* анимация плавной смены цвета крестика */
+.modal__close-btn svg path {
+    transition: stroke .4s;
+}
+
+/* смена цвета крестика при наведении */
+.modal__close-btn:hover svg path {
+    stroke: #F860E4;
+}
+
+/* смена цвета крестика при клике */
+.modal__close-btn:active svg path {
+    stroke: #7199FF;
+}
+
+.modal__close-btn:active {
+    background-color: transparent;
+}
+
+.modal.open,
+.modal-social-networks.open,
+.modal-add-performances.open,
+.modal-more-performances.open,
+.modal-download-photos.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* эти стили примнятся когда у блока .modal появится класс .open (то есть модальное окно будет активировано)*/
+.modal.open .modal__box,
+.modal-social-networks.open .modal__box-social-networks,
+.modal-add-performances.open .modal__box-add-performances,
+.modal-more-performances.open .modal__box-more-performances,
+.modal-download-photos.open .modal__box-download-photos {
+    transform: scale(1);
+}
+
+// forms
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-about {
+    resize: none;
+}

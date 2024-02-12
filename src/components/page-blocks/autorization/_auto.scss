@@ -1,0 +1,284 @@
+*{box-sizing: border-box;}
+
+.container {
+    margin: 0 auto;
+    background-color: #2A2929;
+    border-right: 4px solid #000;
+    border-left: 4px solid #000;
+    border-bottom: 4px solid #000;
+    max-width: 1430px;
+    min-height: 1000px;
+
+}
+
+/* page */
+
+
+.page-autorization {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: -38px 0px 0px;
+}
+
+.page_logo-autorization {
+    display: none;
+    width: 102px;
+    height: 69px;
+    margin: 0 auto;
+}
+
+.page_title-autorization {
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.title_upper {
+    font-family: "Paytone One";
+}
+
+.title_pink {
+    color: #F860ED;
+}
+
+.title_green {
+    color: #DBFE01;
+}
+
+.page_img-autorization {
+    margin: 0px 23px 0px 60px;
+    width: calc(100% - 83px);
+    height: 402px;
+}
+
+@media screen and (width < 1440px){
+    .page-autorization {
+        margin: -2px 0 0;
+    }
+
+    .page_img-autorization {
+        margin: 37px auto 0px;
+        width: 675px;
+        height: 223px;
+    }
+
+    .page_title-autorization {
+        font-size: 40px;
+        width: 451px;
+        height: 105px;
+        margin: 22px auto 0;
+    }
+}
+
+@media screen and (width < 744px){
+    .page_img-autorization {
+        display: none;
+    }
+
+    .page_logo-autorization {
+        margin: 32px auto;
+        display: block;
+    }
+
+    .page_title-autorization {
+        font-size: 28px;
+        width: 269px;
+        height: 85px;
+        margin: 17px auto 0;
+    }
+}
+
+
+/* account */
+
+.account-autorization {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 21px auto 0px;
+}
+
+.account_input-title-autorization {
+    color: #DBFE01;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 5px 4px;
+}
+
+.account_wrapper-autorization {
+    margin-top: 21px;
+}
+
+.account_wrapper-autorization:last-of-type {
+    margin-bottom: 9px;
+}
+
+.account_input-autorization {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    color: #000;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.account_input-autorization:hover {
+    border: 3px solid #DBFE01;
+}
+
+.account_input-autorization:focus {
+    border: 3px solid #F860F5;
+    outline: none;
+}
+
+.account_forgot-autorization {
+    display: flex;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: right;
+    margin: 0px 5px 0px;
+}
+
+.account_forgot-link-autorization {
+    color: #FFF;
+}
+
+.account_forgot-link-autorization:hover {
+    color: #DBFE01
+}
+
+.account_forgot-link-autorization:active {
+    background-color: #DBFE01;
+    color: white
+}
+
+.account_incorrect-autorization {
+    display: none;
+    width: 254px;
+    margin: 17px auto 0;
+    color: #F85757;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.account_login-autorization {
+    width: 100%;
+    height: 60px;
+    background: #DBFE01;
+    margin: 26px auto 0;
+    color: #000;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.account_login-autorization:hover {
+    background-color: #F860F5;
+}
+
+.account_login-autorization:active {
+    border: #F860F5 5px solid;
+    background-color: #DBFE01;
+}
+
+.account_registering-autorization {
+    margin: 8px auto;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.account_registering-link-autorization {
+    color: #FFF;
+}
+
+.account_registering-link-autorization:hover {
+    color: #DBFE01
+}
+
+.account_registering-link-autorization:active {
+    background-color: #DBFE01;
+    color: white
+}
+
+@media screen and (width < 1440px){
+    .account-autorization {
+        width: 438px;
+        margin-top: 97px;
+    }
+
+    .account_incorrect-autorization {
+        margin: 37px auto 0;
+    }
+
+    .account_login-autorization {
+        margin-top: 50px;
+    }
+
+    .account_registering-autorization {
+        margin: 76px auto 106px;
+    }
+}
+
+@media screen and (width < 744px){
+    .account-autorization {
+        width: 270px;
+        margin-top: 54px;
+    }
+
+    .account_input-title-autorization {
+        font-size: 16px;
+    }
+
+    .account_forgot-autorization {
+        font-size: 13px;
+    }
+
+    .account_incorrect-autorization {
+        margin: 44px auto 0;
+    }
+
+    .account_login-autorization {
+        margin-top: 61px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .account_registering-autorization {
+        margin: 17px auto 102px;
+        font-size: 13px;
+    }
+
+    .account_input-autorization {
+        height: 48px;
+        font-size: 16px;
+    }
+
+}

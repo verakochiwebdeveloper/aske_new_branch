@@ -1,0 +1,81 @@
+.--catalog-small {
+  &:hover {
+    background: #d5ddf1;
+    transition: ease-in 0.33s;
+  }
+}
+.heroes__item-cover--small {
+  display: flex;
+  width: 360px;
+  border: solid 4px 4px 0px 0px #000;
+  position: relative;
+  padding: 36px 34px;
+  align-items: center;
+}
+
+.heroes__item-pic--small img {
+  display: block;
+  width: 10rem;
+}
+
+.heroes__itme-label--small {
+  width: 127px;
+  height: 21px;
+}
+
+.heroes__item-title--small {
+  width: 10rem;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.--heroes__item-block-small {
+  margin-top: 20px;
+  margin-left: 25px;
+  width: 177px;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.card-min {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 4px #000;
+  width: 355px;
+  height: 483px;
+  padding: 10px 10px;
+  align-items: center;
+}
+
+.image-block-min {
+  width: 160px;
+  height: 240px;
+  flex: 0 0 160px;
+  overflow: hidden;
+}
+
+.image-block-min img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-block-min {
+  position: relative;
+  background: pink;
+  width: 160px;
+  height: 240px;
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}

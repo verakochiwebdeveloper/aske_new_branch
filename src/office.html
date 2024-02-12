@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"Aske Online",
+"description":"Aske Online",
+"keywords":"Aske Online",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header-office.html')
+	<main class="main">
+		<div class="full__container --container-border-top-none --container-border-down-none">
+
+			<!-- section info -->
+			@@include('components/office/office-info/_office-info.html')
+			<!-- section gallery -->
+			@@include('components/office/office-gallery/_office-gallery.html')
+			<!-- section popups -->
+			@@include('components/office/office-popups/_office-popups.html')
+
+		</div>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
