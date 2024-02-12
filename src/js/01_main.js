@@ -564,6 +564,41 @@ if (info != null) {
   monthCheck();
 }
 
+popupImageOpen = () => {
+  const galery = document.querySelector('.gallery__photos'),
+  popupImgContainerFull = document.querySelector('.popup__gallery-items'),
+  popupImgContainer = document.querySelector('.popup__gallery-relative'),
+  closeImgOpen = () => {
+    popupImgContainer.innerHTML = "";
+    popupImgContainerFull.classList.add('display_none');
+  },
+  imgOpen = (event) => {
+    const element = event.target,
+    elementSrc = element.src;
+    popupImgContainerFull.classList.remove('dispay_none')
+    if (element.className == 'gallery__photos-img') {
+      const img = document.createElement('img'),
+      imgClose = document.createElement('button');
+
+      imgClose.type = 'button';
+      img.src = elementSrc;
+
+      img.classList.add("popup__gallery-img")
+      imgClose.classList.add("popup__gallery-close")
+
+
+      popupImgContainer.appendChild(img);
+      popupImgContainer.appendChild(imgClose);
+      popupImgContainerFull.classList.remove('display_none');
+
+      imgClose.addEventListener('click', closeImgOpen)
+    }
+  };
+  galery.addEventListener('mousedown', imgOpen);
+  console.log(popupImgContainerFull);
+
+};
+
 personalInfo = () => {
   // Открыть и закрыть popup
   document.querySelectorAll(".open-popup").forEach((button) => {
@@ -587,5 +622,8 @@ personalInfo = () => {
 };
 
 if (personal != null) {
-    personalInfo()
+    personalInfo();
+    popupImageOpen();
 }
+
+
