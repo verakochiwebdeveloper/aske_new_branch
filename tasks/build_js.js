@@ -15,3 +15,13 @@ module.exports = function build_js() {
 		.pipe(concat('main.min.js'))
 		.pipe(dest('build/js/'))
 }
+module.exports = function calendar_js() {
+	return src(['src/components/**/*.js', 'src/js/02_main.js'])
+		.pipe(uglify())
+		.pipe(babel({
+			presets: ['@babel/env']
+		}))
+		.pipe(concat('calendar.min.js'))
+		.pipe(dest('build/js/'))
+}
+

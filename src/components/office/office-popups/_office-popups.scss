@@ -2,21 +2,22 @@
     // height: 0;
 }
 
-.popups input{
+.popups input {
     border: 1px solid #DBFE01;
     height: 45px;
     padding-inline: 10px;
 }
 
-.popups textarea{
+.popups textarea {
     border: 1px solid #DBFE01;
     height: 150px;
     padding-inline: 10px;
 }
 
-.popups input[type="file"]{
+.popups input[type="file"] {
     border: none;
 }
+
 .popups input[type="file"]:hover {
     border: none;
 }
@@ -168,4 +169,30 @@
 
 .input-about {
     resize: none;
+}
+
+// input[name="qr-code"] {
+//     max-width: 3410px;
+// }
+
+@media (max-width: 575px) {
+
+    .modal__box,
+    .modal__box-social-networks,
+    .modal__box-add-performances,
+    .modal__box-more-performances,
+    .modal__box-download-photos {
+        padding: 45px 5px 5px 5px;
+        text-align: center;
+    }
+
+    .--green-button {
+        padding: 15px 5px;
+        margin: 50px auto;
+        width: 300px;
+    }
+
+    label[for="qr-code"] {
+        max-width: 340px;
+    }
 }

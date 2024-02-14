@@ -30,7 +30,7 @@
 .gallery__btn-more {
     border: none;
     background-color: transparent;
-    width: 60px;
+    width: 70px;
 
     text-decoration: underline;
     cursor: pointer;
@@ -70,5 +70,12 @@
         &:hover {
             filter: grayscale(0);
         }
+    }
+}
+
+
+@media (max-width: 575px) {
+    .gallery{
+        padding: 100px 50px 70px 50px;
     }
 }

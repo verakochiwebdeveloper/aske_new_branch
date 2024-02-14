@@ -16,3 +16,13 @@ module.exports = function dev_js() {
 		.pipe(dest('build/js/'))
 		.pipe(bs.stream())
 }
+
+module.exports = function dev_calendar_js() {
+	return src(['src/components/**/*.js', 'src/js/02_main.js'])
+		.pipe(map.init())
+		.pipe(uglify())
+		.pipe(concat('calendar.min.js'))
+		.pipe(map.write('../sourcemaps'))
+		.pipe(dest('build/js/'))
+		.pipe(bs.stream())
+}

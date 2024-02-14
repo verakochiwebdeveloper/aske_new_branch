@@ -55,6 +55,11 @@
   height: 483px;
   padding: 10px 10px;
   align-items: center;
+  &:hover {
+    background: #d5ddf1;
+    transition: ease-in 0.33s;
+  }
+  cursor: pointer;
 }
 
 .image-block-min {
@@ -72,10 +77,27 @@
 
 .article-block-min {
   position: relative;
-  background: pink;
   width: 160px;
   height: 240px;
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
+}
+
+.article-block-min h1 {
+  background: #7199ff;
+  z-index: 5;
+  position: absolute;
+  width: 220px;
+  top: -24px;
+  right: 49px;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.article-block-min p {
+  display: block;
+  margin-top: 25px;
+  
 }

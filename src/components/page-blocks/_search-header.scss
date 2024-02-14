@@ -37,3 +37,37 @@
     
 
 }
+
+@media screen and (width < 1280px) and (width >= 744px) {
+    .logo{
+        height: 100px;
+    }
+    .logo__image-search {
+      width: 181px;
+      height: 150px;
+    }
+
+    .catalog__search {
+        width: 559px;
+    }
+    .catalog__search-text {
+        width: 578px;
+        height: 62px;
+      }
+
+    .catalog__search-button {
+        right: -20px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .catalog__search {
+        width: 285px;
+    }
+    .catalog__search-text {
+        width: 265px;
+        height: 62px;
+      }
+      
+      
+  }
